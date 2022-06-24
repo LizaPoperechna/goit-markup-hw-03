@@ -45,6 +45,12 @@ h1, h2, h3, h4, h5, h6, ul, p {
     padding-bottom: 94px;
 }
 
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header a {
     text-decoration: none;
 }
@@ -53,9 +59,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .nav {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
 }
 
 
@@ -83,15 +86,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
     color: var(--title-text-color);
 
 }
-
-.link-current {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
-
 
 .link:hover, .link:focus,
 .link-current:hover, .link-current:focus {
@@ -273,7 +267,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 .team-members img {
     display: block;
-    margin-bottom: 30px;
+
 }
 
 .team-members .item:last-child {
@@ -293,14 +287,18 @@ h1, h2, h3, h4, h5, h6, ul, p {
     font-size: 16px;
     line-height: 1.19;
     color: var(--primery-text-color);
-    margin-bottom: 30px;
     text-align: center;
 }
 
+.team-descr {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
 
 /*Футер*/
 
-.footer .container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -360,8 +358,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 .portfolio {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     background: var(--primery-white-color);
@@ -395,7 +391,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
     background: #F5F4FA;
     border: 0;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     padding: 6px 22px;
 }
@@ -415,6 +410,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .examples-projects .button:hover, .examples-projects .button:focus {
     color: var(--primery-white-color);
     background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -454,7 +450,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 
 .project-item {
-    width: calc((100%-60px)/3);
+    width: calc((100% - 60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
 }
